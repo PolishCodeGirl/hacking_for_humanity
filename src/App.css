@@ -1,17 +1,17 @@
 .App {
-  text-align: center;
-  background-image: url("assets/background.png");
-  background-color:  #E5E5E5;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    text-align: center;
+    background-image: url("assets/background.png");
+    background-color: #E5E5E5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 16px;
-  color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: black;
 }
 
 /* Ranking page */
@@ -24,76 +24,78 @@
 }
 
 .bar {
-  border-radius: 20px;
-  width: 10%;
-  height: 100%;
-  transition: width;
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(.36,.55,.63,.48);
+    border-radius: 20px;
+    width: 10%;
+    height: 100%;
+    transition: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.36, .55, .63, .48);
 }
 
 .shadow {
-  /* 25 50 */
-  box-shadow: 0px 45px 50px rgba(0, 0, 0, 0.25); 
+    /* 25 50 */
+    box-shadow: 0px 45px 50px rgba(0, 0, 0, 0.25);
 }
 
 .leaf {
-  background-color: #b5ccbf;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='60' height='30'%3E%3Cpath fill='%2340584a' fill-opacity='0.47' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    background-color: #b5ccbf;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='60' height='30'%3E%3Cpath fill='%2340584a' fill-opacity='0.47' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .floor {
-  background-color: #00b9f2;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 80 80'%3E%3Cg fill='%2392278f' fill-opacity='0.71'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #00b9f2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 80 80'%3E%3Cg fill='%2392278f' fill-opacity='0.71'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Navbar */
-.title{
-	margin-left: 20px;
-	cursor: pointer;
+.title {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
-.nav-wrapper-flex{
-	width: 100%;
-	height: 50px;
-	background: #aed581;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #ecf0f1;
+.nav-wrapper-flex {
+    width: 100%;
+    height: 50px;
+    background: #aed581;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ecf0f1;
+    padding: 10px 0;
 }
 
-.nav-links{
-	display: flex;
-	list-style-type: none;
-	margin-right: 25px;
-  cursor: pointer;
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 25px;
+    cursor: pointer;
+    align-items: center;
 }
 
 .nav-links li {
-  position: relative;
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #ecf0f1;
+    position: relative;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #ecf0f1;
 }
 
 .nav-links li::after {
-  position: absolute;
-        content: "";
-        width: 100%;
-        height: 2px;
-        top: 110%;
-        left: 0;
-        background:  #ecf0f1;
-        transition: transform 0.5s;
-        transform: scaleX(0);
-        transform-origin: right;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 110%;
+    left: 0;
+    background: #ecf0f1;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
 }
 
 .nav-links li:hover::after {
-  transform: scale(1);
-  transform-origin: left;
+    transform: scale(1);
+    transform-origin: left;
 }
 	
