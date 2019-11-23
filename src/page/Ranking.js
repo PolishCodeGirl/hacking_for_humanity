@@ -21,7 +21,7 @@ const RankingPage = () => {
     }, [])
 
     return (
-        <Div column>
+        <Div column mTop={150}>
             {peopleRanking.map(person => {
                 return (
                     <RankingRow person={person} id={person.id} />

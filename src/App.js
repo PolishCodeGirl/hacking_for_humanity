@@ -8,7 +8,7 @@ import NavigationBar from "./components/NavigationBar";
 function App() {
     return (
         <BrowserRouter>
-            <div className="App-header">
+            <div className="App">
                 <NavigationBar/>
                 <Switch>
                     <Route path='/company-ranking' component={RankingPage}/>

@@ -21,7 +21,7 @@ const CityPage = () => {
     }, [])
 
     return (
-        <Div column>
+        <Div mTop={150} column>
             {cityRanking.map(person => {
                 return (
                     <RankingRow person={person} id={person.id}/>

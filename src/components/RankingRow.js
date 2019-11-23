@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import Div from 'styled-kit/Div';
 
 const RankingRow = ({ person }) => (
-    <Wrapper row itemsCenter>
+    <Wrapper row itemsCenter style={{ background: person.login ? '#91E36B': 'transparent'}}>
         <Number>{`${person.id}.`}</Number>
         <AvatarWrapper>
             <Avatar src={person.avatar} />
         </AvatarWrapper>
-        <Div column>
+        <Div column itemsStart>
             <Name >{person.name}</Name>
             <div className="progress" id={person.id}>
                 <div className="bar shadow leaf"></div>
@@ -23,6 +23,9 @@ export default RankingRow
 const Wrapper = styled(Div)`
     height: 60px;
     margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
 `
 
 const Number = styled(Div)`
@@ -31,12 +34,12 @@ const Number = styled(Div)`
 
 const Name = styled.p`
     margin: 0;
-    font-size: 16px;
+    margin-bottom: 5px;
 `
 
 const AvatarWrapper = styled(Div)`
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-right: 20px;
 `
 
