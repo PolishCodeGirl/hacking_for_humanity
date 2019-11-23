@@ -10,26 +10,38 @@ import bus from '../assets/bus.png';
 const Profile = () => {
     return (
         <Div mTop={50} mLeft={75} column>
-            <p>Moje punkty: 1500</p>
+            <PointsCount>Moje punkty: 1500</PointsCount>
             <Wrapper itemsCenter>
                 <TransportWrapper>
-                    <Transport src={tram} />
+                    <Transport src={tram}/>
                 </TransportWrapper>
-                <p>2345678 pkt</p>
+                <MetadataWraper>
+                    <Metadata>500 pkt</Metadata>
+                    <Metadata>2019-11-11</Metadata>
+                    <Metadata>11:11</Metadata>
+                </MetadataWraper>
             </Wrapper>
 
             <Wrapper itemsCenter>
                 <TransportWrapper>
-                    <Transport src={bike} />
+                    <Transport src={bike}/>
                 </TransportWrapper>
-                <p>2345678 pkt</p>
+                <MetadataWraper>
+                    <Metadata>500 pkt</Metadata>
+                    <Metadata>2019-11-12</Metadata>
+                    <Metadata>12:12</Metadata>
+                </MetadataWraper>
             </Wrapper>
 
             <Wrapper itemsCenter>
                 <TransportWrapper>
-                    <Transport src={bus} />
+                    <Transport src={bus}/>
                 </TransportWrapper>
-                <p>2345678 pkt</p>
+                <MetadataWraper>
+                    <Metadata>500 pkt</Metadata>
+                    <Metadata>2019-11-13</Metadata>
+                    <Metadata>13:13</Metadata>
+                </MetadataWraper>
             </Wrapper>
         </Div>
     )
@@ -57,4 +69,17 @@ const TransportWrapper = styled.div`
 
 const Transport = styled.img`
     width: 100%;
+`
+
+const Metadata = styled.p`
+    margin: 0;
+`
+
+const MetadataWraper = styled(Div)`
+    width: 80%;
+    justify-content: space-around;
+`
+
+const PointsCount = styled.p`
+    font-size: 48px;
 `

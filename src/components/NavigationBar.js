@@ -12,7 +12,7 @@ const NavigationBar = () => {
                 <ul class="nav-links">
                     <li><NavLinkStyled to='/company-ranking/' style={{ color: ' #ecf0f1'}}>W firmie </NavLinkStyled></li>
                     <li><NavLinkStyled to='/city-ranking/' style={{ color: ' #ecf0f1'}}>W Warszawie</NavLinkStyled></li>
-                    <li><AvatarWrapper><Avatar src={avatar3} /></AvatarWrapper></li>
+                    <li><NavLinkStyled to='/'><AvatarWrapper><Avatar src={avatar3} /></AvatarWrapper></NavLinkStyled></li>
                 </ul>
             </nav>
         </NavBarWrapper>
