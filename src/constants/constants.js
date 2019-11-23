@@ -11,3 +11,11 @@ export const peopleRanking = [
     { id: 4, name: 'John Smith', points: '1000', percentage: '40%', avatar: avatar4 },
     { id: 5, name: 'John Snow', points: '500', percentage: '20%', avatar: avatar5 },
 ];
+
+export const cityRanking = [
+    { id: 1, name: 'Skanska', points: '1792', percentage: '100%', avatar: avatar1 },
+    { id: 2, name: 'ACME Inc.', points: '1683', percentage: '62.5%', avatar: avatar2 },
+    { id: 3, name: 'LexCorp', points: '1525', percentage: '39%', avatar: avatar3 },
+    { id: 4, name: 'Industrial Science', points: '1410', percentage: '24%', avatar: avatar4 },
+    { id: 5, name: 'Ecological Company', points: '1364', percentage: '15%', avatar: avatar5 },
+]
