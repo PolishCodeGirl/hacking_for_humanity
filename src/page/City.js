@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import Div from 'styled-kit/Div';
 
-import { peopleRanking } from '../constants/constants'
+import {cityRanking} from '../constants/constants'
 
 import '../App.css';
 import RankingRow from '../components/RankingRow';
@@ -11,7 +11,7 @@ const CityPage = () => {
         const bars = document.querySelectorAll('.bar');
 
         bars.forEach((bar, index) => {
-            const element = peopleRanking.find(person => person.id === index + 1);
+            const element = cityRanking.find(person => person.id === index + 1);
             bar.style.width = element.percentage;
         })
     }
@@ -22,9 +22,9 @@ const CityPage = () => {
 
     return (
         <Div column>
-            {peopleRanking.map(person => {
+            {cityRanking.map(person => {
                 return (
-                    <RankingRow person={person} id={person.id} />
+                    <RankingRow person={person} id={person.id}/>
                 )
             })}
         </Div>
