@@ -2,47 +2,33 @@ import React from 'react';
 import styled from 'styled-components';
 import Div from 'styled-kit/Div';
 
+import {transportEntries} from "../constants/constants";
+
 import '../App.css';
-import tram from '../assets/tram.png';
-import bike from '../assets/bike.png';
-import bus from '../assets/bus.png';
 
 const Profile = () => {
     return (
         <Div mTop={50} mLeft={75} column>
-            <PointsCount>Moje punkty: 1500</PointsCount>
-            <Wrapper itemsCenter>
-                <TransportWrapper>
-                    <Transport src={tram}/>
-                </TransportWrapper>
-                <MetadataWraper>
-                    <Metadata>500 pkt</Metadata>
-                    <Metadata>2019-11-11</Metadata>
-                    <Metadata>11:11</Metadata>
-                </MetadataWraper>
-            </Wrapper>
+            <PointsCount>Moje punkty: {transportEntries
+                .map(entry => entry.pointsCount)
+                .reduce((pointsCount1, pointsCount2) => pointsCount1 + pointsCount2, 0)
+            }
+            </PointsCount>
 
-            <Wrapper itemsCenter>
-                <TransportWrapper>
-                    <Transport src={bike}/>
-                </TransportWrapper>
-                <MetadataWraper>
-                    <Metadata>500 pkt</Metadata>
-                    <Metadata>2019-11-12</Metadata>
-                    <Metadata>12:12</Metadata>
-                </MetadataWraper>
-            </Wrapper>
-
-            <Wrapper itemsCenter>
-                <TransportWrapper>
-                    <Transport src={bus}/>
-                </TransportWrapper>
-                <MetadataWraper>
-                    <Metadata>500 pkt</Metadata>
-                    <Metadata>2019-11-13</Metadata>
-                    <Metadata>13:13</Metadata>
-                </MetadataWraper>
-            </Wrapper>
+            {transportEntries.map(entry => {
+                return (
+                    <Wrapper itemsCenter>
+                        <TransportWrapper>
+                            <Transport src={entry.icon}/>
+                        </TransportWrapper>
+                        <MetadataWraper>
+                            <Metadata>{entry.pointsCount} pkt</Metadata>
+                            <Metadata>{entry.date}</Metadata>
+                            <Metadata>{entry.time}</Metadata>
+                        </MetadataWraper>
+                    </Wrapper>
+                )
+            })}
         </Div>
     )
 }
