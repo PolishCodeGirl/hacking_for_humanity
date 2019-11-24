@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Div from 'styled-kit/Div';
 
-import {transportEntries} from "../constants/constants";
+import { transportEntries } from "../constants/constants";
 
 import '../App.css';
 
@@ -19,7 +19,7 @@ const Profile = () => {
                 return (
                     <Wrapper itemsCenter>
                         <TransportWrapper>
-                            <Transport src={entry.icon}/>
+                            <Transport src={entry.icon} />
                         </TransportWrapper>
                         <MetadataWraper>
                             <Metadata>{entry.pointsCount} pkt</Metadata>
